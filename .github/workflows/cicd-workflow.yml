@@ -15,7 +15,7 @@ jobs:
       - name: Build docker image
         run: docker build -t websoftdev2017/nodejs-app .
       - name: Publish image to docker hub
-        run: docker push integrationninjas/nodejs-app:latest
+        run: docker push websoftdev2017/nodejs-app:latest
         
   deploy:
     needs: build
